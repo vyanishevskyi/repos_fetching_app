@@ -23,6 +23,10 @@ gem 'omniauth-github', '~> 1.3'
 
 gem 'http', '~> 4.0.0'
 
+gem 'haml', '~> 5.0', '>= 5.0.4'
+
+gem 'react-rails', '~> 2.4', '>= 2.4.7'
+
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 

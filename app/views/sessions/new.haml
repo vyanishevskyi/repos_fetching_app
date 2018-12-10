@@ -1,0 +1,5 @@
+- if current_user.blank?
+  = link_to 'Login with Github', '/auth/github', class: 'auth-button'
+- else
+  = react_component 'ReposListContainer', @user_data
+  = button_to 'Sign out', signout_path, method: :delete, class: 'auth-button sign-out'
